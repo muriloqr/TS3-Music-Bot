@@ -1,7 +1,7 @@
 const {MongoClient} = require('mongodb');
 
 // MongoDB connection URL
-const mongoURL = 'mongodb://localhost:27017/NodeJSMusicBot';
+const mongoURL = 'mongodb://capite04:tsbot123@mongo71-farm76.kinghost.net:27017/capite04';
 
 
 // Database Name
