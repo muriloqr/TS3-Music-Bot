@@ -5,7 +5,6 @@ const readline = require('readline');
 const replace = require('replace-in-file');
 const PropertiesReader = require('properties-reader');
 const { TeamSpeakClient } = require("node-ts");
-const LeagueJS = require('leaguejs');
 
 const queuesMap = {
     0:      'Custom game',
@@ -152,7 +151,6 @@ module.exports = {
     },
 
     /**
-     * @param {LeagueJS} leagueJs
      * @param {string} summonerName
      * @param {string} region
      * */
@@ -172,7 +170,6 @@ module.exports = {
 
     /**
      *
-     * @param {LeagueJS} leagueJs
      * @param {string} summonerName
      * @param {string} region
      * @returns {string} summonerId
@@ -185,7 +182,6 @@ module.exports = {
 
     /**
      *
-     * @param {LeagueJS} leagueJs
      * @param {string} summonerName
      * @param {string} region
      * @returns {Promise<Bluebird<CurrentGameInfo>>}
@@ -196,7 +192,6 @@ module.exports = {
 
     /**
      *
-     * @param {LeagueJS} leagueJs
      * @param {string} summonerId
      * @param {string} region
      * @returns {Promise<Bluebird<LeagueEntryDTO[]>>}
@@ -207,7 +202,6 @@ module.exports = {
 
     /**
      *
-     * @param {LeagueJS} leagueJs
      * @param {string} region
      * @returns {Promise<Bluebird<ChampionListDTO<ChampionDTO>>|Bluebird<ChampionListDTO<ChampionFullDTO>>>}
      */
